@@ -43,7 +43,7 @@ public class Version {
 		if (beta()) {
 			return "" + (version() + 1) + "beta";
 		}
-		return "" + version();
+		return "" + version() + ":private-branch";
 	}
 
 	public static boolean beta() {
