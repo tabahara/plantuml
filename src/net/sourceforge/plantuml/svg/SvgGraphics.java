@@ -386,6 +386,7 @@ public class SvgGraphics {
 			String fontStyle, String textDecoration, double textLength, Map<String, String> attributes) {
 		if (hidden == false) {
 			final Element elt = (Element) document.createElement("text");
+			elt.setAttribute("onclick", String.format("top.notify('%s')", text));
 			elt.setAttribute("x", format(x));
 			elt.setAttribute("y", format(y));
 			elt.setAttribute("fill", fill);
